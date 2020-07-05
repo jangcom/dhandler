@@ -65,11 +65,11 @@ class DHandler():
             if action == 'exit':
                 print(f'{dflag} [{d}] not found. Terminating.')
                 sys.exit()
-            if action == 'mkdir':
+            if action == 'makedirs':
                 msg = f'{dflag} [{d}] not found. Create? (y/n)> '
                 y = self.yn_prompt(msg=msg)
                 if y:
-                    os.mkdir(d)
+                    os.makedirs(d)
                 else:
                     return
 
@@ -124,9 +124,8 @@ if __name__ == '__main__':
     # Preprocessing
     dh.exam_exists(args.dfrom,
                    dflag='dfrom', action='exit')
-    if args.func != 'deploy_dir':
-        dh.exam_exists(args.dto,
-                       dflag='dto', action='mkdir')
+    dh.exam_exists(args.dto,
+                   dflag='dto', action='makedirs')
     dh.exam_exists(args.dto,
                    dflag='dto', action='exit')
     args.dfrom = os.path.abspath(args.dfrom)
