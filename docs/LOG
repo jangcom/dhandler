@@ -1,8 +1,11 @@
-# dhandler logs
+# dhandler log
 # J. Jang
 
 2020-07-05 (v1.00)
-- Source code renamed from dirhandler to dhandler
+- Directory handling function added: deploy_dir()
+- Directory handling function renamed:
+  deploy_empty_dirs() to deploy_empty_subdirs()
+- Source code renamed: dirhandler to dhandler
 
 2020-07-04 (v1.00)
 - Source code created
