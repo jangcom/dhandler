@@ -1,0 +1,54 @@
+=head1 NAME
+
+dhandler - Directory handling assistant
+
+=head1 SYNOPSIS
+
+    python dhandler.py [-h] [--func FUNC]
+                       --dfrom DFROM --dto DTO
+
+=head1 DESCRIPTION
+
+    dhandler provides functions that can facilitate directory handling.
+
+=head1 OPTIONS
+
+    -h, --help
+        Help message
+
+    --func FUNC
+        deploy_empty_dirs (default)
+            Deploy empty directories from --dfrom to --dto.
+
+    --dfrom DFROM
+        The directory from which information will be retrieved
+
+    --dto DTO
+        The directory to which the retrieved information will be applied
+
+=head1 EXAMPLES
+
+    python dhandler.py --dfrom ./samples --dto ./samples_unloaded
+
+=head1 REQUIREMENTS
+
+Python 3
+
+=head1 SEE ALSO
+
+L<fhandler - File handling assistant|https://github.com/jangcom/fhandler>
+
+=head1 AUTHOR
+
+Jaewoong Jang <jangj@korea.ac.kr>
+
+=head1 COPYRIGHT
+
+Copyright (c) 2020 Jaewoong Jang
+
+=head1 LICENSE
+
+This software is available under the MIT license;
+the license information is found in 'LICENSE'.
+
+=cut
