@@ -21,7 +21,7 @@ class DHandler():
             formatter_class=argparse.ArgumentDefaultsHelpFormatter)
         parser.add_argument('--func',
                             default='deploy_empty_dirs',
-                            choices=['deploy_empty_dirs'],
+                            choices=self.funcs.keys(),
                             help='directory handling function')
         parser.add_argument('--dfrom',
                             required=True,
