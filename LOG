@@ -1,11 +1,14 @@
 # dhandler log
 # J. Jang
 
-2020-07-05 (v1.00)
+2020-07-06 (v1.0.0)
+- Docstrings added and augmented
+
+2020-07-05 (v1.0.0)
 - Directory handling function added: deploy_dir()
 - Directory handling function renamed:
   deploy_empty_dirs() to deploy_empty_subdirs()
 - Source code renamed: dirhandler to dhandler
 
-2020-07-04 (v1.00)
+2020-07-04 (v1.0.0)
 - Source code created
